@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: #B1DDF1; */
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.evolutions {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 70%;
+}
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
+  width: 300px;
+  border: 8px solid #259AD0;
+  border-radius: 20px;
+  padding: 20px;
+  background-image: url(https://res.cloudinary.com/otaner/image/upload/v1637376241/pokemon/types/water.png);
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: aliceblue;
+  background-blend-mode: color-burn;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+
+.pokemon:hover {
+  box-shadow: 0 0 12px 4px rgba(50, 50, 50, .3);
+}
+
+.pokemon.main {
+  height: 400px;
+}
+
+.number {
+  position: absolute;
+  top: -8%;
+  left: -8%;
+  transform: rotate(-45deg);
+  background-color: #155a7a;
+  color: aliceblue;
+  font-weight: bold;
+  border-radius: 100%;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #259AD0;
+}
+
+.type {
+  position: absolute;
+  top: 2%;
+  right: 2%; 
+}
+
+.image {
+  width: 50%;
+  transition: all 0.4s ease-in-out;
+}
+
+.main .image {
+  width: 85%;
+}
+
+.image img {
+  width: 100%;
+}
+
+.data {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+}
+
+.main .name {
+  font-size: 1.5rem;
+}
+
+.catch {
+  border: none;
+  border-radius: 6px;
+  background-color: #155a7a;
+  cursor: pointer;
+  color: aliceblue;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+}
+
+.catch:hover {
+  background-color: #259AD0;
+}
