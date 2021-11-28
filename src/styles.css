@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: sans-serif;
+}
+
+.message {
+  margin-top: 10rem;
+  color: grey;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.choices {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.initial {
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  border-width: 8px;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: 40% 120%;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-blend-mode: luminosity;
+  position: relative;
+}
+
+.initial.bulbasaur {
+  background-color: mediumspringgreen;
+  background-image: url(https://res.cloudinary.com/otaner/image/upload/v1637376240/pokemon/types/grass.png);
+  border-color: mediumseagreen;
+}
+
+.initial.charmander {
+  background-color: peachpuff;
+  background-image: url(https://res.cloudinary.com/otaner/image/upload/v1637376240/pokemon/types/fire.png);
+  border-color: orangered;
+}
+
+.initial.squirtle {
+  background-color: aliceblue;
+  background-image: url(https://res.cloudinary.com/otaner/image/upload/v1637376240/pokemon/types/water.png);
+  border-color: #259AD0;
+}
+
+.images {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.sprite, .choose, .opened, .closed {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.6s ease-in-out;
+}
+
+.sprite img, .opened img, .closed img {
+  width: 100%;
+}
+
+.closed, .opened {
+  width: 100px;
+  cursor: pointer;
+}
+
+.sprite {
+  width: 20px;
+  opacity: 0;
+}
+
+.choose {
+  opacity: 0;
+  border: none;
+  border-radius: 8px;
+  color: floralwhite;
+  height: 30px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.bulbasaur .choose {
+  background-color: mediumseagreen;
+}
+
+.bulbasaur .choose:hover {
+  background-color: seagreen;
+}
+
+.charmander .choose {
+  background-color: orangered;
+}
+
+.charmander .choose:hover {
+  background-color: orange;
+}
+
+.squirtle .choose {
+  background-color: #259AD0;
+}
+
+.squirtle .choose:hover {
+  background-color: #155a7a;
+}
+
+.opened {
+  z-index: 0;
+}
+
+.closed {
+  z-index: 1;
+}
+
+.active .opened {
+  z-index: 1;
+}
+
+.active .closed {
+  z-index: 0;
+}
+
+.active .choose {
+  opacity: 1;
+}
+
+.active .sprite {
+  width: 50px;
+  opacity: 1;
+  bottom: 60%;
+  left: 40%;
+  transform: scale(2);
+  z-index: 2;
+}
+
+.icon {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  bottom: -35%;
+  left: 50%;
+  width: 60px;
+}
+
+.icon img {
+  width: 100%;
+}

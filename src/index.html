@@ -4,35 +4,99 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
     <title>Choose your initial</title>
   </head>
   <body>
+    <figure>
+      <img src="https://res.cloudinary.com/otaner/image/upload/v1638066511/pokemon/items/logo.svg" alt="Pokemon">
+    </figure>
     <section class="choices">
-      <section class="initial">
+      <section class="initial bulbasaur">
         <section class="images">
-          <figure>
+          <figure class="closed">
             <img
               src="https://res.cloudinary.com/otaner/image/upload/v1638066415/pokemon/items/pokeball.svg"
               alt="Pokeball"
             />
           </figure>
-          <figure>
+          <figure class="opened">
             <img
               src="https://res.cloudinary.com/otaner/image/upload/v1638066414/pokemon/items/opened-pokeball.svg"
               alt="Opened pokeball"
             />
           </figure>
-          <figure>
+          <figure class="sprite">
             <img
               src="https://res.cloudinary.com/otaner/image/upload/v1637363902/pokemon/xy-animated-sprites/bulbasaur.gif"
               alt="Bulbasaur"
             />
           </figure>
+          <button class="choose" data-name="bulbasaur">Escolher</button>
         </section>
         <figure class="icon">
           <img src="https://res.cloudinary.com/otaner/image/upload/v1638066415/pokemon/items/bulbasaur.svg" alt="Bulbasaur">
         </figure>
       </section>
+      
+      <section class="initial charmander">
+        <section class="images">
+          <figure class="closed">
+            <img
+              src="https://res.cloudinary.com/otaner/image/upload/v1638066415/pokemon/items/pokeball.svg"
+              alt="Pokeball"
+            />
+          </figure>
+          <figure class="opened">
+            <img
+              src="https://res.cloudinary.com/otaner/image/upload/v1638066414/pokemon/items/opened-pokeball.svg"
+              alt="Opened pokeball"
+            />
+          </figure>
+          <figure class="sprite">
+            <img
+              src="https://res.cloudinary.com/otaner/image/upload/v1637363902/pokemon/xy-animated-sprites/charmander.gif"
+              alt="Charmander"
+            />
+          </figure>
+          <button class="choose" data-name="charmander">Escolher</button>
+        </section>
+        <figure class="icon">
+          <img src="https://res.cloudinary.com/otaner/image/upload/v1638066415/pokemon/items/charmander.svg" alt="Charmander">
+        </figure>
+      </section>
+
+      <section class="initial squirtle">
+        <section class="images">
+          <figure class="closed">
+            <img
+              src="https://res.cloudinary.com/otaner/image/upload/v1638066415/pokemon/items/pokeball.svg"
+              alt="Pokeball"
+            />
+          </figure>
+          <figure class="opened">
+            <img
+              src="https://res.cloudinary.com/otaner/image/upload/v1638066414/pokemon/items/opened-pokeball.svg"
+              alt="Opened pokeball"
+            />
+          </figure>
+          <figure class="sprite">
+            <img
+              src="https://res.cloudinary.com/otaner/image/upload/v1637363902/pokemon/xy-animated-sprites/squirtle.gif"
+              alt="Squirtle"
+            />
+          </figure>
+          <button class="choose" data-name="squirtle">Escolher</button>
+        </section>
+        <figure class="icon">
+          <img src="https://res.cloudinary.com/otaner/image/upload/v1638066415/pokemon/items/squirtle.svg" alt="Squirtle">
+        </figure>
+      </section>
     </section>
+    <section class="message">
+      <h2>Escolha seu pokémon inicial</h2>
+    </section>
+
+    <script src="./scripts.js"></script>
   </body>
 </html>
