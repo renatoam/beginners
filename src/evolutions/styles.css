@@ -7,8 +7,9 @@
 body {
   font-family: sans-serif;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
   position: relative;
 }
@@ -168,6 +169,8 @@ body.squirtle {
   text-align: center;
   text-transform: uppercase;
   transition: all 0.4s ease-in-out;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
 
 .main .name {
@@ -175,14 +178,17 @@ body.squirtle {
 }
 
 .bulbasaur .name {
+  background-color: honeydew;
   color: forestgreen;
 }
 
 .charmander .name {
+  background-color: peachpuff;
   color: brown;
 }
 
 .squirtle .name {
+  background-color: aliceblue;
   color: #155a7a;
 }
 
